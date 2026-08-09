@@ -2,7 +2,7 @@ using CSV, DataFrames, JuMP, HiGHS
 
 df = CSV.read("foundation.csv", DataFrame)
 
-DAYS = 36500
+DAYS = 7
 
 names = df.name
 cost = df.cost
@@ -27,10 +27,10 @@ M = maximum(max_units) * DAYS
 
 # target macros
 cost_range = (0, 200) .* DAYS
-cal_range = (0, 1500) .* DAYS
-protein_range = (0, Inf) .* DAYS
-fat_range = (0, Inf) .* DAYS
-carbs_range = (0, Inf) .* DAYS
+cal_range = (1500, 2000) .* DAYS
+protein_range = (150, Inf) .* DAYS
+fat_range = (60, Inf) .* DAYS
+carbs_range = (100, Inf) .* DAYS
 fiber_range = (25, Inf) .* DAYS
 calcium_range = (1000, 2500) .* DAYS
 iron_range = (8, 25) .* DAYS
@@ -43,13 +43,13 @@ vit_d_range = (15, 40) .* DAYS
 
 # Model and decision variables
 model = Model(HiGHS.Optimizer)
-@variable(model, x[1:N] >= 0, Int)
-@variable(model, y[1:N], Bin)
+@variable(model, x[1:N] >= 0, Int) # integer units of food `i` over the whole horizon
+@variable(model, y[1:N], Bin)      # is food `i` used at all?
 
-@constraint(model, [i = 1:N], x[i] <= max_units[i] * DAYS)
-@constraint(model, [i = 1:N], x[i] <= M * y[i])
-@constraint(model, [i = 1:N], x[i] >= y[i])
-@constraint(model, sum(y) <= 5)
+@constraint(model, [i = 1:N], x[i] <= max_units[i] * DAYS) # per-day cap * horizon
+@constraint(model, [i = 1:N], x[i] <= M * y[i])            # big-M linking, x > 0 means y = 1
+@constraint(model, [i = 1:N], x[i] >= y[i])                # y = 1 => x >= 1
+@constraint(model, sum(y) <= 6)                            # variety cap (might need to bump if no sols)
 
 # Compute totals
 @expression(model, total_cost, sum(cost[i] * x[i] for i in 1:N))
@@ -91,9 +91,9 @@ optimize!(model)
 
 println("Chosen ingredients:")
 for i in 1:N
-    grams = Int(round(value(x[i]); digits=0))
-    if grams > 0
-        println(grams, "x ", rpad(names[i], 25))
+    units = Int(round(value(x[i]); digits=0))
+    if units > 0
+        println(units, "x ", rpad(names[i], 25))
     end
 end
 
