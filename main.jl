@@ -1,14 +1,12 @@
 using CSV, DataFrames, JuMP, HiGHS
 
-df = vcat(
-    CSV.read("foundation.csv", DataFrame),
-    CSV.read("ingredients.csv", DataFrame),
-)
+df = CSV.read("ingredients.csv", DataFrame; comment="#") # from target's website
 
 # Blank micros count as 0
 col(name) = coalesce.(df[!, name], 0.0)
 
 DAYS = 7
+WEEKLY_BUDGET = 130.0
 
 names = df.name
 cost = col(:cost)
@@ -32,20 +30,20 @@ N = nrow(df)
 M = maximum(max_units) * DAYS
 
 # target macros
-cost_range = (0, 200) .* DAYS
-cal_range = (1500, 2000) .* DAYS
-protein_range = (150, Inf) .* DAYS
-fat_range = (60, Inf) .* DAYS
+cost_range = (0, WEEKLY_BUDGET / 7) .* DAYS
+cal_range = (1534, 2434) .* DAYS
+protein_range = (145, Inf) .* DAYS
+fat_range = (75, Inf) .* DAYS
 carbs_range = (100, Inf) .* DAYS
 fiber_range = (25, Inf) .* DAYS
 calcium_range = (1000, 2500) .* DAYS
-iron_range = (8, 25) .* DAYS
+iron_range = (8, 45) .* DAYS
 magnesium_range = (400, Inf) .* DAYS
 potassium_range = (3400, Inf) .* DAYS
-sodium_range = (500, 2300) .* DAYS
+sodium_range = (1500, 2300) .* DAYS
 zinc_range = (11, 40) .* DAYS
-vit_c_range = (90, Inf) .* DAYS
-vit_d_range = (15, 40) .* DAYS
+vit_c_range = (90, 2000) .* DAYS
+vit_d_range = (15, 100) .* DAYS
 
 # Model and decision variables
 model = Model(HiGHS.Optimizer)
@@ -55,7 +53,14 @@ model = Model(HiGHS.Optimizer)
 @constraint(model, [i = 1:N], x[i] <= max_units[i] * DAYS) # per-day cap * horizon
 @constraint(model, [i = 1:N], x[i] <= M * y[i])            # big-M linking, x > 0 means y = 1
 @constraint(model, [i = 1:N], x[i] >= y[i])                # y = 1 => x >= 1
-@constraint(model, sum(y) <= 6)                            # variety cap (might need to bump if no sols)
+@constraint(model, sum(y) <= 7)                            # variety cap (might need to bump if no sols)
+
+CATEGORY_CAP = 1 # only allow this many overlapping categories. prevents the solver from suggesting 3 varieties of nugget
+category = coalesce.(df.category, "other")
+for c in unique(category)
+    c == "supplement" && continue
+    @constraint(model, sum(y[i] for i in 1:N if category[i] == c) <= CATEGORY_CAP)
+end
 
 # Compute totals
 @expression(model, total_cost, sum(cost[i] * x[i] for i in 1:N))
@@ -94,6 +99,11 @@ model = Model(HiGHS.Optimizer)
 
 # Solve and print results
 optimize!(model)
+
+if !is_solved_and_feasible(model)
+    println("No solution: ", termination_status(model))
+    exit(1)
+end
 
 println("Chosen ingredients:")
 for i in 1:N

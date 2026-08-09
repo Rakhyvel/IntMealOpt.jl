@@ -1,119 +1,112 @@
-name,cost,max,scale,calories,protein,fats,carbs,fiber,ca,fe,mg,k,na,zn,vit_c,vit_d
-quest chips,2.47,2,100,140,20,4.5,4,1,,,,,,,,
-barbell bar,2.335,3,100,200,20,7,20,3,,,,,,,,
-burrito carb balance,0.745,2,100,110,10,6,32,28,114,0,0,24,550,0,0,0
-soft taco carb balance,0.61,2,100,70,6,3.5,19,17,70,0,0,10,330,0,0,0
-fajita carb balance,0.44,2,100,45,4,2,12,11,40,0,0,10,220,0,0,0
-chomp,2.28,2,100,100,10,7,0,0,,,,,,,,
-turkey chomp,2.31,2,100,80,12,3.5,0,0,,,,,,,,
-Premier protein,2.665,2,100,160,30,3,3,0,650,1.8,85,180,0,2.8,23,0
-prune,0.11,20,100,20,0.2,0,4.6,0.6,,,,,,,,
-quest protein bar,2.2,2,100,190,21,9,22,12,,,,,,,,
-quest protein brownie,2.37,2,100,170,20,6,24,15,,,,,,,,
-28g mixed nuts,0.46,5,100,170,5,15,6,2,,,,,,,,
-broccoli bowl,3.69,1,100,190,28,5,8,4,,,,,,,,
-cheddar snack cheese,0.29,3,100,80,5,7,0,0,,,,,,,,
-shredded mild cheddar,0.25,3,100,110,6,9,2,0,,,,,,,,
-block medium cheddar,0.24,3,100,110,6,9,0.5,0,,,,,,,,
-block colby jack,0.24,3,100,110,7,9,0,0,,,,,,,,
-strawberry light+fit yogurt,1,2,100,80,12,0,8,0,,,,,,,,
-jimmy dean delight,2.97,1,100,270,19,12,22,3,,,,,,,,
-172g just bare chicken,2.72,4,100,320,32,14,18,0,,,,,,,,
-26g core power,3.99,2,100,170,26,4.5,8,2,,,,,,,,
-42g core power,5.28,2,100,230,42,3.5,9,2,,,,,,,,
-hash browns,0.35,3,100,140,2,9,13,1,,,,,,,,
-ripi short rib ravioli,4,2,100,260,11,8,36,0,,,,,,,,
-MiLa black pepper beef rice bowl,6.99,1,100,350,17,5,57,1,,,,,,,,
-MiLa sweet and sour pork rice bowl,6.99,1,100,390,13,12,58,2,,,,,,,,
-Buldak frozen carbonara topokki,4.4,2,100,340,10,3,70,3,,,,,,,,
-Buldak original frozen fried rice,4.4,2,100,420,9,8,80,2,,,,,,,,
-Tyson all natural white meat fun nuggets,0.78,4,100,210,13,12,11,1,,,,,,,,
-tyson all natural chicken nuggets,0.78,4,100,210,11,13,12,1,,,,,,,,
-Deep indian kati frozen butter chicken wrap,3.99,1,100,310,18,12,35,3,,,,,,,,
-jams PB&J strawberry,1.5,2,100,260,10,14,25,4,,,,,,,,
-Deep indian kati chicken tikka masala,3.99,1,100,340,19,14,35,5,,,,,,,,
-hazelnut uncrustable,0.99,2,100,210,4,9,28,1,,,,,,,,
-bright-eyed berry uncrustable,1.24,2,100,320,12,18,33,4,,,,,,,,
-lean cuisine five cheese rigatoni,3.29,1,100,350,14,9,54,3,,,,,,,,
-amys broccoli and cheddar,6.29,1,100,460,18,20,51,3,,,,,,,,
-lean cuisine chicken broccoli,3.29,1,100,260,19,3.5,39,3,,,,,,,,
-healthy choice beef broccoli,3.69,1,100,300,15,8,42,3,,,,,,,,
-kevins chicken burrito bowl,5.99,1,100,360,28,13,31,4,,,,,,,,
-deep chicken curry,5.99,1,100,320,26,11,32,4,,,,,,,,
-deep butter chicken bowl,5.99,1,100,400,23,19,36,4,,,,,,,,
-deep spinach paneer,5.99,1,100,400,17,21,38,5,,,,,,,,
-tilapia butter puck + potatoes,4.76,1,100,330,32,11,26,2,,,,,,,,
-black beans,0.28,1,100,110,7,0,20,5,,,,,,,,
-chicken breast,1.34,0,100,260,50,6,0,0,,,,,,,,
-chicken breast + potatoes,2.1,1,100,370,53,6,26,2,,,,,,,,
-chicken breast + rice,1.43,1,100,420,53,6,36,0,,,,,,,,
-crunchy roasted edamame,1,4,100,120,14,5,8,6,,,,,,,,
-cup whole milk,0.22,2,100,150,8,8,12,0,,,,,,,,
-cup fairlife 2%,0.77,2,100,120,13,4.5,6,0,,,,,,,,
-cup fairlife fat free,0.77,2,100,80,13,0,6,0,,,,,,,,
-2% cottage cheese,1,2,100,80,14,2.5,3,0,,,,,,,,
-mulu high protein cottage cheese 2%,1.07,2,100,100,18,2.5,3,0,,,,,,,,
-FAGE 0% greek yogurt,1.4,2,100,90,18,0,5,0,,,,,,,,
-protein penne,0.28,2,100,190,10,1,38,5,,,,,,,,
-nature valley honey protein ball,1.38,2,100,200,10,9,20,2,,,,,,,,
-gomacro oatmel chocolate chip,2.12,2,100,270,12,9,35,3,,,,,,,,
-jimmy dean meat lovers,3.29,2,100,490,22,37,16,2,,,,,,,,
-jimmy dean bacon bowl,3.29,2,100,400,26,25,18,2,,,,,,,,
-protein spaghetti,0.29,2,100,200,10,1,38,5,,,,,,,,
-goodles,1.2,2,100,270,15,4,48,6,,,,,,,,
-built puff,2.24,2,100,140,17,2.5,14,1,,,,,,,,
-built sour puff,2.24,2,100,150,16,2.5,15,0,,,,,,,,
-kodiak power waffles,1.14,2,100,240,12,11,26,3,,,,,,,,
-counter beefy queso burrito,4.99,2,100,340,30,10,34,3,,,,,,,,
-david,3.25,2,100,150,20,4.5,16,6,,,,,,,,
-rise & puff chipotle chicken quesadillo,3.99,1,100,300,20,16,21,0,,,,,,,,
-jimmy dea croissant,1.5,1,100,400,13,26,29,2,,,,,,,,
-khloud protein popcorn,1.25,2,100,160,7,10,11,2,,,,,,,,
-spylt,3.79,2,100,90,20,0,1,0,,,,,,,,
-magic spoon pastries,2.5,2,100,170,11,7,26,6,,,,,,,,
-fishwife tuna olive oil,6.99,1,100,190,17,13,0,0,,,,,,,,
-fishwife smoked mackerel,6.99,1,100,220,15,15,4,1,,,,,,,,
-iberia sardines,1.59,1,100,210,19,15,0,0,,,,,,,,
-king oscar anchovies,2.69,2,100,75,20,3.75,0,0,,,,,,,,
-natural caught tuna,5.29,1,100,130,21,4.5,0,0,,,,,,,,
-oats over night,3.19,1,100,230,15,4.5,35,5,,,,,,,,
-jimmy dean delights english muffin,2,2,100,270,18,8,31,2,,,,,,,,
-fishwife sardines,6.99,1,100,200,18,14,0,0,,,,,,,,
-protein cheerios,0.48,2,100,150,8,2.5,24,2,,,,,,,,
-stouffers mac and cheese,3.39,1,100,480,21,21,51,2,,,,,,,,
-catalina crunch,0.89,2,100,110,11,5,14,9,,,,,,,,
-sola bagel,1.58,2,100,110,15,3,34,30,,,,,,,,
-clean simple eat protein soda,4,2,100,90,20,0,2,0,,,,,,,,
-Nurri protein shake,2.59,2,100,150,30,2.5,2,0,740,0.3,40,350,180,4,0,5
-quest strawberry shake,3.61,2,100,230,45,4,4,0,1210,0.7,0,180,300,0,0,0
-babybel,0.68,2,100,50,5,3,0,0,,,,,,,,
-genius sparkling protein,2.99,2,100,130,30,0,1,0,,,,,,,,
-magin spoon,1.8,2,100,150,13,8,15,1,,,,,,,,
-wilde protein chips,1.8,2,100,200,13,13,9,2,,,,,,,,
-fishwife smoked salmon,12.99,1,100,340,19,26,2,0,,,,,,,,
-oikos fusion strawberry,2.39,2,100,130,23,1.5,9,5,,,,,,,,
-ratio pro fiber lemon meringue,1.69,2,100,180,20,3.5,21,10,,,,,,,,
-brown rice pouch,1.49,1,100,440,8,8,82,4,,,,,,,,
-white sandwich bread,0.15,1,100,120,4,1.5,23,1,,,,,,,,
-rustik oven hearty grains and seeds,0.56,2,100,180,7,3.5,31,4,,,,,,,,
-rustik oven sourdough,0.56,2,100,160,6,2,30,1,,,,,,,,
-red baron pepperoni,1.25,2,100,380,14,17,40,2,,,,,,,,
-jacks thin crust pepperoni,1.66,2,100,340,16,15,26,2,,,,,,,,
-vital pursuit chicken spinach alfredo,3.98,1,100,460,31,13,54,12,,,,,,,,
-vital pursuit garlib herb,3.98,1,100,340,22,14,31,3,,,,,,,,
-marie calendars aged cheddar,2.76,1,100,360,18,11,46,3,,,,,,,,
-healthy choice chicken alfredo,2.77,1,100,340,24,8,42,3,,,,,,,,
-scott jon's garlic butter shrimp,4.26,1,100,390,16,16,36,0,,,,,,,,
-snapdragon beef pho,2.89,1,100,220,3,3.5,45,1,,,,,,,,
-panera creamy chicken and wild rice,5.99,1,100,260,11,16,19,2,,,,,,,,
-progresso chicken homestyle noodles,2.49,1,100,100,7,2.5,14,1,,,,,,,,
-progresso chicken noodle,2.49,1,100,100,7,2.5,13,1,,,,,,,,
-panera chicken noodle,5.99,1,100,120,11,2,15,1,,,,,,,,
-progresso tomato basil,2.49,1,100,120,2,3,22,3,,,,,,,,
-progresso italian style wedding,2.49,1,100,120,6,3.5,15,1,,,,,,,,
-progresso beef pot roast,2.59,1,100,110,5,1.5,19,2,,,,,,,,
-progresso chicken & wild rice,2.49,1,100,80,5,0.5,15,1,,,,,,,,
-snapdragon chicken pho,2.89,1,100,230,4,4,44,2,,,,,,,,
-panera broccoli cheddar,5.99,1,100,440,17,27,32,3,,,,,,,,
-progresso minestrone,2.49,1,100,110,5,2,19,4,,,,,,,,
-heyday tomato ricotta lasagna,4.49,1,100,180,6,9,21,4,,,,,,,,
+name,cost,max,scale,calories,protein,fats,carbs,fiber,ca,fe,mg,k,na,zn,vit_c,vit_d,category
+quest chips,2.47,2,100,140,20,4.5,4,1,160,0.4,0,40,290,0,0,0,snack
+barbell bar,2.335,3,100,200,20,7,20,3,140,1,0,150,150,0,0,0,bar
+burrito carb balance,0.745,2,100,110,10,6,32,28,114,0,0,24,550,0,0,0,tortilla
+soft taco carb balance,0.61,2,100,70,6,3.5,19,17,70,0,0,10,330,0,0,0,tortilla
+fajita carb balance,0.44,2,100,45,4,2,12,11,40,0,0,10,220,0,0,0,tortilla
+chomp,2.28,2,100,100,10,7,0,0,40,0.8,0,160,380,0,0,0,meat
+turkey chomp,2.31,2,100,80,12,3.5,0,0,50,0.7,0,180,390,0,0,0.2,meat
+Premier protein,2.665,2,100,160,30,3,3,0,650,1.8,85,180,0,2.8,23,0,shake
+prune,0.11,5,100,20,0.2,0,4.6,0.6,20,0.2,0,290,0,0,0,0,snack
+quest protein bar,2.2,2,100,190,21,9,22,12,140,0.6,0,140,220,0,0,0,bar
+quest protein brownie,2.37,2,100,170,20,6,24,15,140,2.8,0,210,240,0,0,0,snack
+28g mixed nuts,0.46,5,100,170,5,15,6,2,40,1.3,0,180,80,0,0,0,snack
+broccoli bowl,3.69,1,100,190,28,5,8,4,70,0.8,0,1180,600,0,27,0,frozen meal
+cheddar snack cheese,0.29,3,100,80,5,7,0,0,130,0,0,20,150,0,0,0,cheese
+shredded mild cheddar,0.25,3,100,110,6,9,2,0,190,0,0,20,180,0,0,0.2,cheese
+block medium cheddar,0.24,3,100,110,6,9,0.5,0,14,0,0,0,180,0,0,0.2,cheese
+block colby jack,0.24,3,100,110,7,9,0,0,14,0.2,0,0,170,0,0,0.2,cheese
+strawberry light+fit yogurt,1,2,100,80,12,0,8,0,140,0,0,150,45,0,0,0,yogurt
+jimmy dean delight,2.97,1,100,270,19,12,22,3,130,1.1,0,520,730,0,0,0.2,breakfast
+172g just bare chicken,2.72,4,100,320,32,14,18,0,10,0.4,0,300,540,0,0,0,frozen meal
+26g core power,3.99,2,100,170,26,4.5,8,2,670,1.4,0,1.4,260,0,0,5,shake
+42g core power,5.28,2,100,230,42,3.5,9,2,900,1.6,0,700,260,0,0,10,shake
+hash browns,0.35,3,100,140,2,9,13,1,10,0.3,0,280,270,0,0,0,breakfast
+ripi short rib ravioli,4,2,100,260,11,8,36,0,76,2,0,174,460,0,0,0,frozen meal
+MiLa black pepper beef rice bowl,6.99,1,100,350,17,5,57,1,20,2.1,0,360,860,0,0,0,frozen meal
+MiLa sweet and sour pork rice bowl,6.99,1,100,390,13,12,58,2,90,4.1,0,470,670,0,0,0.4,frozen meal
+Buldak frozen carbonara topokki,4.4,2,100,340,10,3,70,3,40,0.7,0,220,920,0,0,0,frozen meal
+Buldak original frozen fried rice,4.4,2,100,420,9,8,80,2,20,0.8,0,250,1180,0,0,0,frozen meal
+Tyson all natural white meat fun nuggets,0.78,4,100,210,13,12,11,1,0,1,0,230,430,0,0,0,nugget
+tyson all natural chicken nuggets,0.78,4,100,210,11,13,12,1,0,0.8,0,190,450,0,0,0,nugget
+tyson simple chicken nuggets,1.14,4,100,260,23,18,1,0,230,0.5,0,540,370,0,0,0,nugget
+Deep indian kati frozen butter chicken wrap,3.99,1,100,310,18,12,35,3,50,1.9,0,340,660,0,0,0,frozen meal
+jams PB&J strawberry,1.5,2,100,260,10,14,25,4,30,2.4,0,230,190,0,0,0,breakfast
+Deep indian kati chicken tikka masala wrap,3.99,1,100,340,19,14,35,5,50,1.5,0,370,770,0,0,0,frozen meal
+hazelnut uncrustable,0.99,1,100,210,4,9,28,1,30,1.4,0,120,160,0,0,0,breakfast
+bright-eyed berry uncrustable,1.24,1,100,320,12,18,33,4,50,1.4,0,270,230,0,0,0,breakfast
+lean cuisine five cheese rigatoni,3.29,1,100,350,14,9,54,3,190,1.8,0,430,680,0,0,0,frozen meal
+amys broccoli and cheddar,6.29,1,100,460,18,20,51,3,420,0.7,0,390,690,0,0,0.8,frozen meal
+lean cuisine chicken broccoli,3.29,1,100,260,19,3.5,39,3,160,0.7,0,530,750,0,0,0,frozen meal
+healthy choice beef broccoli,3.69,1,100,300,15,8,42,3,0,1.7,0,520,520,0,0,0,frozen meal
+kevins chicken burrito bowl,5.99,1,100,360,28,13,31,4,190,1.1,0,720,640,0,0,0,frozen meal
+kevins parmesan basil chicken bowl,5.99,1,100,270,34,10,10,2,250,1.3,0,1080,740,0,0,0.3,frozen meal
+deep chicken curry,5.99,1,100,320,26,11,32,4,30,0,0,520,540,0,0,0,frozen meal
+deep butter chicken bowl,5.99,1,100,400,23,19,36,4,40,0,0,470,590,0,0,0,frozen meal
+deep spinach paneer,5.99,1,100,400,17,21,38,5,360,1.7,0,430,760,0,0,0,frozen meal
+tilapia butter puck,3.995,2,100,220,29,11,0,0,20,0.5,0,510,170,0,0,24.1,frozen meal
+crunchy roasted edamame,1,1,100,120,14,5,8,6,50,1.6,0,550,230,0,0,0,snack
+cup whole milk,0.22,2,100,150,8,8,12,0,325,0,0,423,125,0,0,3,milk
+cup fairlife 2%,0.77,2,100,120,13,4.5,6,0,380,0,25,400,120,1.4,0,5,milk
+cup fairlife fat free,0.77,2,100,80,13,0,6,0,380,0,25,400,120,1.4,0,5,milk
+2% cottage cheese,1,2,100,80,14,2.5,3,0,100,0.1,0,130,330,0,0,0,yogurt
+mulu high protein cottage cheese 2%,1.07,2,100,100,18,2.5,3,0,104,0,0,0,380,0,0,0,yogurt
+FAGE 0% greek yogurt,1.4,2,100,90,18,0,5,0,200,0,0,260,65,0,0,0,yogurt
+#protein penne,0.28,2,100,190,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+nature valley honey protein ball,1.38,2,100,200,10,9,20,2,80,2.4,0,190,210,0,0,0,bar
+gomacro oatmel chocolate chip,2.12,2,100,270,12,9,35,3,35,1,0,125,15,0,0,0,bar
+jimmy dean meat lovers,2.99,2,100,490,22,37,16,2,280,2,0,460,1110,0,0,0.8,breakfast
+jimmy dean bacon bowl,2.99,2,100,400,26,25,18,2,240,2,0,530,910,0,0,1.2,breakfast
+jimmy dean zesty bacon and monterrey bowl,3.99,2,100,450,40,29,7,1,440,1.5,0,450,890,0,0,0.6,breakfast
+#protein spaghetti,0.29,2,100,200,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+goodles,1.2,2,100,270,15,4,48,6,140,3,0,280,600,2,9,2,pasta
+goodles cup,1.9475,1,100,210,10,3.5,37,5,90,2.1,0,220,570,1.2,0,1.5,pasta
+built puff,2.24,2,100,140,17,2.5,14,1,81,3,0,188,90,0,0,0,bar
+built sour puff,2.24,2,100,150,16,2.5,15,0,31,4,0,19,85,0,0,0,bar
+kodiak power waffles,1.14,2,100,240,12,11,26,3,50,1.4,0,130,390,0,0,0,breakfast
+counter beefy queso burrito,4.99,2,100,340,30,10,34,3,304,4,0,253,1330,0,0,0,frozen meal
+david,3.25,2,100,150,20,4.5,16,6,140,0.4,0,110,160,0,0,0,bar
+rise & puff chipotle chicken quesadillo,3.99,1,100,300,20,16,21,0,223,0,0,113,620,0,0,0,frozen meal
+jimmy dean croissant,1.5,1,100,400,13,26,29,2,150,2.7,0,200,610,0,0,0,breakfast
+jimmy dean croissant (delight),2.1475,1,100,290,15,12,32,4,86,2,0,290,700,0,0,0,breakfast
+khloud protein popcorn,1.25,2,100,160,7,10,11,2,30,0.3,0,90,160,0,0,0,snack
+spylt,3.79,2,100,90,20,0,1,0,498,0,0,117,320,0,0,5,shake
+magic spoon pastries,2.5,2,100,170,11,7,26,6,180,0,0,60,200,0,0,0,breakfast
+oats over night,3.19,1,100,230,15,4.5,35,5,120,3.7,0,200,310,0,0,0,breakfast
+jimmy dean delights english muffin,2,2,100,270,18,8,31,2,90,2.4,0,320,730,0,0,0,breakfast
+protein cheerios,0.48,2,100,150,8,2.5,24,2,130,3.6,0,130,210,2.2,9,4,cereal
+stouffers mac and cheese,3.39,1,100,480,21,21,51,2,400,0.7,0,450,1280,0,0,0,frozen meal
+catalina crunch,0.89,2,100,110,11,5,14,9,140,3.1,0,20,180,0,0,0,cereal
+clean simple eats protein soda,4,2,100,90,20,0,2,0,0,0,0,0,0,0,0,0,shake
+Nurri protein shake,2.59,2,100,150,30,2.5,2,0,740,0.3,40,350,180,4,0,5,shake
+quest strawberry shake,3.61,2,100,230,45,4,4,0,1210,0.7,0,180,300,0,0,0,shake
+genius sparkling protein,2.99,2,100,130,30,0,1,0,0,0,0,0,0,0,0,0,shake
+magic spoon cereal,1.8,2,100,150,13,8,15,1,19,2,0,19,160,0,0,0,cereal
+magic spoon oatmeal,1.398,2,100,200,15,3.5,35,6,300,1.8,0,170,220,0,0,0,cereal
+magic spoon treats,1.9975,2,100,130,12,6,17,7,150,1,0,60,75,0,0,0,snack
+wilde protein chips,1.8,2,100,200,13,13,9,2,150,0.4,0,110,380,0,0,0,snack
+oikos fusion strawberry,2.39,2,100,130,23,1.5,9,5,190,0,0,260,105,0,0,4.5,yogurt
+ratio pro fiber lemon meringue,1.69,2,100,180,20,3.5,21,10,390,0,33.6,376,90,0,0,0,bar
+brown rice pouch,1.49,0,100,440,8,8,82,4,20,0,0,240,25,0,0,0,snack
+vital pursuit chicken spinach alfredo,3.98,1,100,460,31,13,54,12,260,1.7,0,320,950,0,22,0.7,frozen meal
+vital pursuit garlic herb,3.98,1,100,340,22,14,31,3,0,0,0,0,0,0,0,0,frozen meal
+vital pursuit chicken mozzarella pizza,4.29,1,100,370,33,15,25,17,530,1.1,0,280,690,0,0,0,frozen meal
+vital pursuit chicken bacon ranch piada,4.29,1,100,380,22,15,40,4,310,1.2,0,430,760,0,0,0,frozen meal
+marie calendars aged cheddar,2.76,1,100,360,18,11,46,3,,,,,,,,,cheese
+healthy choice chicken fettuccine alfredo,2.77,1,100,340,24,8,42,3,100,1.6,0,760,580,0,0,0,frozen meal
+scott jon's garlic butter shrimp,4.26,1,100,390,16,16,36,0,263,2,0,376,780,0,0,0,frozen meal
+snapdragon beef pho,2.89,1,100,220,3,3.5,45,1,20,0.4,0,130,1040,0,0,0,soup
+panera creamy chicken and wild rice,5.99,1,100,260,11,16,19,2,60,0.4,0,270,750,0,0,0,soup
+progresso chicken homestyle noodles,2.49,1,100,100,7,2.5,14,1,0,0.5,0,340,690,0,0,0,soup
+progresso chicken noodle,2.49,1,100,100,7,2.5,13,1,30,0.8,0,580,1430,0,0,0,soup
+panera chicken noodle,5.99,1,100,240,21,5,28,2,40,1.6,0,570,1360,0,0,0,soup
+progresso tomato basil,2.49,1,100,120,2,3,22,3,0,0.8,0,810,690,0,0,0,soup
+progresso italian style wedding,2.49,1,100,120,6,3.5,15,1,30,0.7,0,350,690,0,0,0,soup
+progresso beef pot roast,2.59,1,100,110,5,1.5,19,2,30,0.8,0,600,660,0,0,0,soup
+progresso chicken & wild rice,2.49,1,100,80,5,0.5,15,1,0,0.5,0,350,640,0,0,0,soup
+snapdragon chicken pho,2.89,1,100,230,4,4,44,2,10,0,0,46,840,0,0,0,soup
+panera broccoli cheddar,5.99,1,100,440,17,27,32,3,430,0.9,0,630,1850,0,0,1.2,soup
+progresso minestrone,2.49,1,100,110,5,2,19,4,30,1.2,0,480,690,0,0,0,soup
+heyday tomato ricotta lasagna,4.49,1,100,180,6,9,21,4,,,,,,,,,frozen meal
+multivitamin,0.0796,1,100,0,0,0,0,0,210,0,120,0,0,11,99,25,supplement
+magnesium glycinate,0.248,1,100,0,0,0,0,0,0,0,300,0,0,0,0,0,supplement
