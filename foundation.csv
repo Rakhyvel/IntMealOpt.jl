@@ -29,14 +29,14 @@ Beef (chuck)(roast)(boneless)(choice)(raw),1.83,3,85,232,18.4,17.8,0,0,5,2.06,17
 Beef (flank)(steak)(boneless)(choice)(raw),2.31,3,85,164,20.1,9.4,0,0,4,1.83,18.9,167,51,5.56,0,0
 Beef (ground)(80% lean meat / 20% fat)(raw),1.44,3,85,243,17.5,19.4,0,0,7,1.96,16.4,273,55,3.85,0,0
 Beef (ground)(90% lean meat / 10% fat)(raw),1.38,3,85,185,18.2,12.8,0,0,7,2.13,16.5,281,62,4.19,0,0
-Beef (loin)(tenderloin roast)(seperable lean only)(boneless)(trimmed to 0" fat)(select)(cooked)(roasted),2.0175,0,85,168,27.7,6.36,0,0,13,3.04,13.7,352,54,3.7,0,0
+"Beef (loin)(tenderloin roast)(seperable lean only)(boneless)(trimmed to 0"" fat)(select)(cooked)(roasted)",2.0175,0,85,168,27.7,6.36,0,0,13,3.04,13.7,352,54,3.7,0,0
 Beef (ribeye)(steak)(boneless)(choice)(raw),2.788,3,85,254,18.7,20,0,0,4,1.64,16.7,288,43,4.06,0,0
-Beef (round)(eye of round roast)(boneless)(seperable lean only)(trimmed to 0" fat)(select)(raw),1.6575,3,85,116,23.4,2.48,0,0,13,1.37,11.4,312,50,3.38,0,0
-Beef (round)(top round roast)(boneless)(seperable lean only)(trimmed to 0" fat)(select)(raw),100000,0,85,116,23.7,2.41,0,0,13,2.34,11.9,316,55,3.54,0,0
+"Beef (round)(eye of round roast)(boneless)(seperable lean only)(trimmed to 0"" fat)(select)(raw)",1.6575,3,85,116,23.4,2.48,0,0,13,1.37,11.4,312,50,3.38,0,0
+"Beef (round)(top round roast)(boneless)(seperable lean only)(trimmed to 0"" fat)(select)(raw)",100000,0,85,116,23.7,2.41,0,0,13,2.34,11.9,316,55,3.54,0,0
 Beef (round)(top round)(boneless)(choice)(raw),2.145,3,85,141,21.5,5.7,0.85,0,4,1.92,2.1,352,46,3.78,0,0
 Beef (NY strip steak)(raw),2.6,3,85,190,21.3,11.5,0.22,0,5,1.61,19.5,323,43,3.28,0,0
-Beef (porterhouse steak)(seperable lean only)(trimmed to 1/8" fat)(select)(raw),2.7313,3,85,139,22.7,5.32,0,0,19,2.26,10.7,266,43,3.52,0,0
-Beef (t-bone steak)(bone-in)(seperable lean only)(trimmed to 1/8" fat)(choice)(cooked)(grilled),2.619,0,85,212,27.3,11.4,0,0,19,3.53,20,283,67,4.69,0,0
+"Beef (porterhouse steak)(seperable lean only)(trimmed to 1/8"" fat)(select)(raw)",2.7313,3,85,139,22.7,5.32,0,0,19,2.26,10.7,266,43,3.52,0,0
+"Beef (t-bone steak)(bone-in)(seperable lean only)(trimmed to 1/8"" fat)(choice)(cooked)(grilled)",2.619,0,85,212,27.3,11.4,0,0,19,3.53,20,283,67,4.69,0,0
 Beef (top sirloin steak)(raw),2.797,3,85,140,22,5.71,0.22,0,4,2.22,22.1,349,43,3.45,0,0
 Beef (tenderloin steak)(raw),3.17,3,85,143,21.1,6.46,0.18,4,0,2.53,22,345,45,3.22,0,0
 Beet greens (raw),100000,0,100,26,1.61,0.14,4.66,2.6,76,3.16,74.4,369,280,0.32,8.6,0
@@ -275,10 +275,4 @@ Yogurt (Greek)(plain)(whole milk),0.786,2,170,94,8.78,4.39,4.75,0,111,0.1,10.7,1
 Yogurt (Greek)(strawberry)(nonfat),0.67,2,150,82,8.06,0.15,12,0.6,97,0.09,10.4,133,32,0.46,0.2,1
 Yogurt (plain)(nonfat),0.528,2,170,50,4.23,0.09,8.08,0,167,0.1,15.2,210,51,0.6,0,0.22
 Yogurt (plain)(whole milk),0.648,2,170,78,3.82,4.48,5.57,0,127,0.1,11.4,164,42,0.43,0,0.78
-Premier protein,2.665,2,100,160,30,3,3,0,650,1.8,85,180,0,2.8,23,0
-burrito carb balance,0.745,2,100,110,10,6,32,28,114,0,0,24,550,0,0,0
-soft taco carb balance,0.61,2,100,70,6,3.5,19,17,70,0,0,10,330,0,0,0
-fajita carb balance,0.44,2,100,45,4,2,12,11,40,0,0,10,220,0,0,0
 sardines (in water),1.12,1,100,120,11,8,0,0,172,0.7,0,128,270,0,0,8
-Quest protein shake,3.61,2,100,230,45,4,4,0,1210,0.7,0,180,300,0,0,0
-Nurri protein shake,2.59,2,100,150,30,2.5,2,0,740,0.3,40,350,180,4,0,5

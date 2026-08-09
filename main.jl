@@ -1,25 +1,31 @@
 using CSV, DataFrames, JuMP, HiGHS
 
-df = CSV.read("foundation.csv", DataFrame)
+df = vcat(
+    CSV.read("foundation.csv", DataFrame),
+    CSV.read("ingredients.csv", DataFrame),
+)
+
+# Blank micros count as 0
+col(name) = coalesce.(df[!, name], 0.0)
 
 DAYS = 7
 
 names = df.name
-cost = df.cost
-scale = df.scale
-cal = df.calories
-protein = df.protein
-fat = df.fats
-carbs = df.carbs
-fiber = df.fiber
-calcium = df.ca
-iron = df.fe
-magnesium = df.mg
-potassium = df.k
-sodium = df.na
-zinc = df.zn
-vit_c = df.vit_c
-vit_d = df.vit_d
+cost = col(:cost)
+scale = col(:scale)
+cal = col(:calories)
+protein = col(:protein)
+fat = col(:fats)
+carbs = col(:carbs)
+fiber = col(:fiber)
+calcium = col(:ca)
+iron = col(:fe)
+magnesium = col(:mg)
+potassium = col(:k)
+sodium = col(:na)
+zinc = col(:zn)
+vit_c = col(:vit_c)
+vit_d = col(:vit_d)
 max_units = df.max
 
 N = nrow(df)
