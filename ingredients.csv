@@ -1,16 +1,13 @@
 name,cost,max,scale,calories,protein,fats,carbs,fiber,ca,fe,mg,k,na,zn,vit_c,vit_d,category
-quest chips,2.47,2,100,140,20,4.5,4,1,160,0.4,0,40,290,0,0,0,snack
-barbell bar,2.335,3,100,200,20,7,20,3,140,1,0,150,150,0,0,0,bar
-burrito carb balance,0.745,2,100,110,10,6,32,28,114,0,0,24,550,0,0,0,tortilla
-soft taco carb balance,0.61,2,100,70,6,3.5,19,17,70,0,0,10,330,0,0,0,tortilla
-fajita carb balance,0.44,2,100,45,4,2,12,11,40,0,0,10,220,0,0,0,tortilla
+quest chips,2.47,1,100,140,20,4.5,4,1,160,0.4,0,40,290,0,0,0,snack
+barbell bar,2.335,1,100,200,20,7,20,3,140,1,0,150,150,0,0,0,bar
 chomp,2.28,2,100,100,10,7,0,0,40,0.8,0,160,380,0,0,0,meat
 turkey chomp,2.31,2,100,80,12,3.5,0,0,50,0.7,0,180,390,0,0,0.2,meat
 Premier protein,2.665,2,100,160,30,3,3,0,650,1.8,85,180,0,2.8,23,0,shake
 prune,0.11,5,100,20,0.2,0,4.6,0.6,20,0.2,0,290,0,0,0,0,snack
-quest protein bar,2.2,2,100,190,21,9,22,12,140,0.6,0,140,220,0,0,0,bar
-quest protein brownie,2.37,2,100,170,20,6,24,15,140,2.8,0,210,240,0,0,0,snack
-28g mixed nuts,0.46,5,100,170,5,15,6,2,40,1.3,0,180,80,0,0,0,snack
+quest protein bar,2.2,1,100,190,21,9,22,12,140,0.6,0,140,220,0,0,0,bar
+quest protein brownie,2.37,1,100,170,20,6,24,15,140,2.8,0,210,240,0,0,0,snack
+28g mixed nuts,0.46,2,100,170,5,15,6,2,40,1.3,0,180,80,0,0,0,snack
 broccoli bowl,3.69,1,100,190,28,5,8,4,70,0.8,0,1180,600,0,27,0,frozen meal
 cheddar snack cheese,0.29,3,100,80,5,7,0,0,130,0,0,20,150,0,0,0,cheese
 shredded mild cheddar,0.25,3,100,110,6,9,2,0,190,0,0,20,180,0,0,0.2,cheese
@@ -18,7 +15,9 @@ block medium cheddar,0.24,3,100,110,6,9,0.5,0,14,0,0,0,180,0,0,0.2,cheese
 block colby jack,0.24,3,100,110,7,9,0,0,14,0.2,0,0,170,0,0,0.2,cheese
 strawberry light+fit yogurt,1,2,100,80,12,0,8,0,140,0,0,150,45,0,0,0,yogurt
 jimmy dean delight,2.97,1,100,270,19,12,22,3,130,1.1,0,520,730,0,0,0.2,breakfast
-172g just bare chicken,2.72,4,100,320,32,14,18,0,10,0.4,0,300,540,0,0,0,frozen meal
+just bare bites,1.24,6,100,160,16,7,9,0,10,0.4,0,300,540,0,0,0,nugget
+just bare strips,1.42,6,100,170,17,6,11,0,10,0.5,0,360,620,0,0,0.1,nugget
+perdue,1.28,4,100,150,15,6,7,1,6,0,0,280,400,0,0,0,nugget
 26g core power,3.99,2,100,170,26,4.5,8,2,670,1.4,0,1.4,260,0,0,5,shake
 42g core power,5.28,2,100,230,42,3.5,9,2,900,1.6,0,700,260,0,0,10,shake
 hash browns,0.35,3,100,140,2,9,13,1,10,0.3,0,280,270,0,0,0,breakfast
@@ -29,7 +28,9 @@ Buldak frozen carbonara topokki,4.4,2,100,340,10,3,70,3,40,0.7,0,220,920,0,0,0,f
 Buldak original frozen fried rice,4.4,2,100,420,9,8,80,2,20,0.8,0,250,1180,0,0,0,frozen meal
 Tyson all natural white meat fun nuggets,0.78,4,100,210,13,12,11,1,0,1,0,230,430,0,0,0,nugget
 tyson all natural chicken nuggets,0.78,4,100,210,11,13,12,1,0,0.8,0,190,450,0,0,0,nugget
-tyson simple chicken nuggets,1.14,4,100,260,23,18,1,0,230,0.5,0,540,370,0,0,0,nugget
+#tyson simple chicken nuggets,1.14,4,100,260,23,18,1,0,230,0.5,0,540,370,0,0,0,nugget
+#tyson simple spicy chicken nuggets,1.14,4,100,270,23,18,2,0,230,0.7,0,530,360,0,0,0,nugget
+#tyson simple ingredient strips,1.14,5,100,180,20,8,7,0,0,0.5,0,600,410,0,0,0,nugget
 Deep indian kati frozen butter chicken wrap,3.99,1,100,310,18,12,35,3,50,1.9,0,340,660,0,0,0,frozen meal
 jams PB&J strawberry,1.5,2,100,260,10,14,25,4,30,2.4,0,230,190,0,0,0,breakfast
 Deep indian kati chicken tikka masala wrap,3.99,1,100,340,19,14,35,5,50,1.5,0,370,770,0,0,0,frozen meal
@@ -46,19 +47,22 @@ deep butter chicken bowl,5.99,1,100,400,23,19,36,4,40,0,0,470,590,0,0,0,frozen m
 deep spinach paneer,5.99,1,100,400,17,21,38,5,360,1.7,0,430,760,0,0,0,frozen meal
 tilapia butter puck,3.995,2,100,220,29,11,0,0,20,0.5,0,510,170,0,0,24.1,frozen meal
 crunchy roasted edamame,1,1,100,120,14,5,8,6,50,1.6,0,550,230,0,0,0,snack
-cup whole milk,0.22,2,100,150,8,8,12,0,325,0,0,423,125,0,0,3,milk
+cup whole milk,0.23,2,100,150,8,8,12,0,325,0,0,423,125,0,0,3,milk
+cup 2% milk,0.23,2,100,140,10,5,13,0,250,0,0,470,140,0,0,3,milk
+cup 1% milk,0.23,2,100,130,10,2.5,16,0,300,0,0,470,160,0,0,3,milk
+cup 0% milk,0.28,2,100,90,8,0,13,0,300,0,0,410,130,0,0,2.5,milk
 cup fairlife 2%,0.77,2,100,120,13,4.5,6,0,380,0,25,400,120,1.4,0,5,milk
 cup fairlife fat free,0.77,2,100,80,13,0,6,0,380,0,25,400,120,1.4,0,5,milk
 2% cottage cheese,1,2,100,80,14,2.5,3,0,100,0.1,0,130,330,0,0,0,yogurt
 mulu high protein cottage cheese 2%,1.07,2,100,100,18,2.5,3,0,104,0,0,0,380,0,0,0,yogurt
 FAGE 0% greek yogurt,1.4,2,100,90,18,0,5,0,200,0,0,260,65,0,0,0,yogurt
-#protein penne,0.28,2,100,190,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+protein penne,0.28,2,100,190,10,1,38,5,16,2,40,261,0,0,0,0,pasta
 nature valley honey protein ball,1.38,2,100,200,10,9,20,2,80,2.4,0,190,210,0,0,0,bar
-gomacro oatmel chocolate chip,2.12,2,100,270,12,9,35,3,35,1,0,125,15,0,0,0,bar
+gomacro oatmeal chocolate chip bar,2.12,2,100,270,12,9,35,3,35,1,0,125,15,0,0,0,bar
 jimmy dean meat lovers,2.99,2,100,490,22,37,16,2,280,2,0,460,1110,0,0,0.8,breakfast
 jimmy dean bacon bowl,2.99,2,100,400,26,25,18,2,240,2,0,530,910,0,0,1.2,breakfast
 jimmy dean zesty bacon and monterrey bowl,3.99,2,100,450,40,29,7,1,440,1.5,0,450,890,0,0,0.6,breakfast
-#protein spaghetti,0.29,2,100,200,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+protein spaghetti,0.29,2,100,200,10,1,38,5,16,2,40,261,0,0,0,0,pasta
 goodles,1.2,2,100,270,15,4,48,6,140,3,0,280,600,2,9,2,pasta
 goodles cup,1.9475,1,100,210,10,3.5,37,5,90,2.1,0,220,570,1.2,0,1.5,pasta
 built puff,2.24,2,100,140,17,2.5,14,1,81,3,0,188,90,0,0,0,bar
@@ -76,12 +80,25 @@ oats over night,3.19,1,100,230,15,4.5,35,5,120,3.7,0,200,310,0,0,0,breakfast
 jimmy dean delights english muffin,2,2,100,270,18,8,31,2,90,2.4,0,320,730,0,0,0,breakfast
 protein cheerios,0.48,2,100,150,8,2.5,24,2,130,3.6,0,130,210,2.2,9,4,cereal
 stouffers mac and cheese,3.39,1,100,480,21,21,51,2,400,0.7,0,450,1280,0,0,0,frozen meal
-catalina crunch,0.89,2,100,110,11,5,14,9,140,3.1,0,20,180,0,0,0,cereal
+catalina crunch cinnamon,1.1089,2,100,110,11,5,14,9,140,3.1,0,20,180,0,0,0,cereal
+catalina crunch blueberry,1.1089,2,100,130,10,5,14,7,180,1.8,0,40,150,0,0,0,cereal
+catalina crunch chocolate peanut butter,1.1089,2,100,140,11,5,15,6,140,3.3,0,60,180,0,0,0,cereal
+catalina crunch fruity,1.1089,2,100,150,11,6,15,6,140,3.1,0,20,180,0,0,0,cereal
 clean simple eats protein soda,4,2,100,90,20,0,2,0,0,0,0,0,0,0,0,0,shake
 Nurri protein shake,2.59,2,100,150,30,2.5,2,0,740,0.3,40,350,180,4,0,5,shake
+NOON,2.2475,1,100,170,20,2,15,5,413,0,0,294,160,0,0,5.2,shake
+premier protein cereal,1.04,2,100,180,20,5,14,1,40,2.1,0,110,260,0,0,0,cereal
+protein honey bunches of oats,0.755,2,100,250,9,6,39,3,40,16.6,33.6,150,270,11,0,0,cereal
+protein special k,0.66125,2,100,210,10,2,42,6,130,18,0,190,300,0,0,2,cereal
+kalshi go peanut butter,0.64875,2,100,220,10,9,33,10,90,1.5,42,450,140,1.1,0,0,cereal
+kalshi go chocolate,0.64875,2,100,210,10,7,34,10,30,2.3,42,430,115,1.1,0,0,cereal
+kalshi go mixed berry,0.64875,2,100,200,10,3.5,40,10,30,1.7,42,150,60,1.1,0,0,cereal
+kalshi go honey almond flax,0.62111,2,100,210,10,6,36,10,40,1.7,42,430,170,1.1,0,0,cereal
+protein raisin bran,0.66125,2,100,210,9,1,46,6,100,17,0,240,260,0,0,1.6,cereal
+seven sundays,1.2136,2,100,200,11,7,24,2,110,2,0,180,150,0,0,0,cereal
 quest strawberry shake,3.61,2,100,230,45,4,4,0,1210,0.7,0,180,300,0,0,0,shake
 genius sparkling protein,2.99,2,100,130,30,0,1,0,0,0,0,0,0,0,0,0,shake
-magic spoon cereal,1.8,2,100,150,13,8,15,1,19,2,0,19,160,0,0,0,cereal
+magic spoon smores cereal,1.658,2,100,180,12,10,15,1,20,1.9,0,0,160,0,0,0,cereal
 magic spoon oatmeal,1.398,2,100,200,15,3.5,35,6,300,1.8,0,170,220,0,0,0,cereal
 magic spoon treats,1.9975,2,100,130,12,6,17,7,150,1,0,60,75,0,0,0,snack
 wilde protein chips,1.8,2,100,200,13,13,9,2,150,0.4,0,110,380,0,0,0,snack

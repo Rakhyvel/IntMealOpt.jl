@@ -5,7 +5,7 @@ df = CSV.read("ingredients.csv", DataFrame; comment="#") # from target's website
 # Blank micros count as 0
 col(name) = coalesce.(df[!, name], 0.0)
 
-DAYS = 7
+DAYS = 1
 WEEKLY_BUDGET = 130.0
 
 names = df.name
@@ -31,9 +31,9 @@ M = maximum(max_units) * DAYS
 
 # target macros
 cost_range = (0, WEEKLY_BUDGET / 7) .* DAYS
-cal_range = (1534, 2434) .* DAYS
-protein_range = (145, Inf) .* DAYS
-fat_range = (75, Inf) .* DAYS
+cal_range = (0, 2434) .* DAYS
+protein_range = (150, Inf) .* DAYS
+fat_range = (60, 90) .* DAYS
 carbs_range = (100, Inf) .* DAYS
 fiber_range = (25, Inf) .* DAYS
 calcium_range = (1000, 2500) .* DAYS
@@ -53,7 +53,7 @@ model = Model(HiGHS.Optimizer)
 @constraint(model, [i = 1:N], x[i] <= max_units[i] * DAYS) # per-day cap * horizon
 @constraint(model, [i = 1:N], x[i] <= M * y[i])            # big-M linking, x > 0 means y = 1
 @constraint(model, [i = 1:N], x[i] >= y[i])                # y = 1 => x >= 1
-@constraint(model, sum(y) <= 7)                            # variety cap (might need to bump if no sols)
+@constraint(model, sum(y) <= 6)                            # variety cap (might need to bump if no sols)
 
 CATEGORY_CAP = 1 # only allow this many overlapping categories. prevents the solver from suggesting 3 varieties of nugget
 category = coalesce.(df.category, "other")
