@@ -11,11 +11,6 @@ quest protein brownie,2.37,1,100,170,20,6,24,15,140,2.8,0,210,240,0,0,0,snack
 broccoli bowl,3.69,1,100,190,28,5,8,4,70,0.8,0,1180,600,0,27,0,frozen meal
 cheddar snack cheese,0.29,3,100,80,5,7,0,0,130,0,0,20,150,0,0,0,cheese
 shredded mild cheddar,0.25,3,100,110,6,9,2,0,190,0,0,20,180,0,0,0.2,cheese
-mozzarella (1oz from block),0.224375,3,100,80,7,6,2,0,195,0.1,0,55,190,0,0,0.1,cheese
-cheddar (any sharpness)(1oz from block),0.224375,3,100,110,6,9,1,0,199,0,0,20,180,0,0,0.2,cheese
-monterrey jack (1oz from block),0.224375,3,100,100,7,8,0,0,210,0.2,0,30,170,0,0,0.2,cheese
-colby jack (1oz from block),0.24,3,100,110,7,9,0,0,140,0.2,0,0,170,0,0,0.2,cheese
-swiss (1oz from block),0.27,3,100,110,8,9,0,0,200,0.2,0,0,50,0,0,0.2,cheese
 kraft pepper jack stick,1.038,2,100,150,17,8,1,0,460,0,0,0,420,0,0,0,cheese
 g&g cheddar cheese stick,0.2325,2,100,80,5,7,1,0,150,0,0,20,135,0,0,0,cheese
 g&g gouda cheese stick,0.399,2,100,70,5,6,0,0,150,0.1,0,30,170,0,0,0.1,cheese
@@ -43,13 +38,24 @@ Tyson all natural white meat fun nuggets,0.78,4,100,210,13,12,11,1,0,1,0,230,430
 tyson all natural chicken nuggets,0.78,3,100,210,11,13,12,1,0,0.8,0,190,450,0,0,0,nugget
 tyson simple chicken nuggets,1.14,4,100,260,23,18,1,0,230,0.5,0,540,370,0,0,0,nugget
 tyson simple spicy chicken nuggets,1.14,4,100,270,23,18,2,0,230,0.7,0,530,360,0,0,0,nugget
-tyson simple ingredient strips,1.14,5,100,180,20,8,7,0,0,0.5,0,600,410,0,0,0,nugget
+tyson simple ingredient strips,1.14,4,100,180,20,8,7,0,0,0.5,0,600,410,0,0,0,nugget
 tyson grilled chicken breast,1.14,8,100,120,22,2.5,2,0,0,0.7,0,380,360,0,0,0,nugget
+tyson mini dino nuggets cup,3.99,2,100,370,32,18,18,1,0,1.3,0,590,700,0,0,0,nugget
+tyson bbq chicken bites cup,3.99,2,100,230,34,7,9,0,0,0.8,0,1110,590,0,0,0,nugget
+nature raised farms strips,1.427,5,100,190,20,8,9,3,0,0.5,0,590,350,0,0,0,nugget
+nature raised farms nuggets,1.11,5,100,210,15,12,11,3,0,0.7,0,230,400,0,0,0,nugget
+nature raised farms bites,1.427,5,100,190,20,8,9,3,0,0.5,0,590,350,0,0,0,nugget
+applegate farms tender,2.538,5,100,170,13,6,16,0,8,0,0,253,360,0,0,0,nugget
+state fair beef corn dog,0.749166,3,100,240,6,13,26,1,0,0.72,0,0,450,0,0,0,frozen meal
+state fair beef mini corn dogs,1.7483,4,100,270,8,16,24,1,30,1.5,0,120,700,0,0,0,frozen meal
 Deep indian kati frozen butter chicken wrap,3.99,1,100,310,18,12,35,3,50,1.9,0,340,660,0,0,0,frozen meal
-jams PB&J strawberry,1.5,2,100,260,10,14,25,4,30,2.4,0,230,190,0,0,0,breakfast
 Deep indian kati chicken tikka masala wrap,3.99,1,100,340,19,14,35,5,50,1.5,0,370,770,0,0,0,frozen meal
-hazelnut uncrustable,0.99,1,100,210,4,9,28,1,30,1.4,0,120,160,0,0,0,breakfast
-bright-eyed berry uncrustable,1.24,1,100,320,12,18,33,4,50,1.4,0,270,230,0,0,0,breakfast
+jams PB&J strawberry,1.5,2,100,260,10,14,25,4,30,2.4,0,230,190,0,0,0,snack
+hazelnut uncrustable,0.99,1,100,210,4,9,28,1,30,1.4,0,120,160,0,0,0,snack
+grape uncrustable,0.986,1,100,210,6,9,28,2,20,1.1,0,130,220,0,0,0,snack
+strawberry uncrustable,0.986,1,100,210,6,9,28,2,20,1.1,0,140,220,0,0,0,snack
+bright-eyed berry uncrustable,1.24,1,100,320,12,18,33,4,50,1.4,0,270,230,0,0,0,snack
+blackberry uncrustable,0.9975,1,100,210,6,9,28,2,20,1.1,0,130,220,0,0,0,snack
 lean cuisine five cheese rigatoni,3.29,1,100,350,14,9,54,3,190,1.8,0,430,680,0,0,0,frozen meal
 amys broccoli and cheddar,6.29,1,100,460,18,20,51,3,420,0.7,0,390,690,0,0,0.8,frozen meal
 lean cuisine chicken broccoli,3.29,1,100,260,19,3.5,39,3,160,0.7,0,530,750,0,0,0,frozen meal
@@ -59,8 +65,12 @@ kevins parmesan basil chicken bowl,5.99,1,100,270,34,10,10,2,250,1.3,0,1080,740,
 deep chicken curry,5.99,1,100,320,26,11,32,4,30,0,0,520,540,0,0,0,frozen meal
 deep butter chicken bowl,5.99,1,100,400,23,19,36,4,40,0,0,470,590,0,0,0,frozen meal
 deep spinach paneer,5.99,1,100,400,17,21,38,5,360,1.7,0,430,760,0,0,0,frozen meal
-tilapia butter puck,3.995,2,100,220,29,11,0,0,20,0.5,0,510,170,0,0,24.1,frozen meal
+tilapia butter puck meal,3.995,2,100,220,29,11,0,0,20,0.5,0,510,170,0,0,24.1,frozen meal
+pizza rolls pepporoni,0.56125,4,100,200,5,8,30,1,0,2,0,170,370,0,0,0,frozen meal
 crunchy roasted edamame,1,1,100,120,14,5,8,6,50,1.6,0,550,230,0,0,0,snack
+favorite day vanilla ice cream sandiwch,0.26583,2,100,150,2,5,24,0,50,0,0,0,130,0,0,0.6,snack
+favorite day vanilla ice cream,0.3655,3,100,170,2,9,21,0,100,0,0,140,65,0,0,0,snack
+bomb pop,0.7475,2,100,120,0,0,30,0,0,0,0,0,15,0,0,0,snack
 cup whole milk,0.23,2,100,150,8,8,12,0,325,0,0,423,125,0,0,3,milk
 cup 2% milk,0.23,2,100,140,10,5,13,0,250,0,0,470,140,0,0,3,milk
 cup 1% milk,0.23,2,100,130,10,2.5,16,0,300,0,0,470,160,0,0,3,milk
@@ -78,13 +88,23 @@ mulu high protein cottage cheese 2%,1.07,2,100,100,18,2.5,3,0,104,0,0,0,380,0,0,
 FAGE 0% greek yogurt,1.398,2,100,90,18,0,5,0,200,0,0,260,65,0,0,0,yogurt
 FAGE 2% greek yogurt,1.398,2,100,120,17,3.5,5,0,200,0,0,260,55,0,0,0,yogurt
 FAGE 5% greek yogurt,1.398,2,100,160,15,9,5,0,200,0,0,260,60,0,0,0,yogurt
-protein penne,0.28,2,100,190,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+#protein penne,0.28,2,100,190,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+#protein spaghetti,0.29,2,100,200,10,1,38,5,16,2,40,261,0,0,0,0,pasta
 nature valley honey protein ball,1.38,2,100,200,10,9,20,2,80,2.4,0,190,210,0,0,0,snack
 gomacro oatmeal chocolate chip bar,2.12,2,100,270,12,9,35,3,35,1,0,125,15,0,0,0,snack
 jimmy dean meat lovers,2.99,2,100,490,22,37,16,2,280,2,0,460,1110,0,0,0.8,breakfast
 jimmy dean bacon bowl,2.99,2,100,400,26,25,18,2,240,2,0,530,910,0,0,1.2,breakfast
 jimmy dean zesty bacon and monterrey bowl,3.99,2,100,450,40,29,7,1,440,1.5,0,450,890,0,0,0.6,breakfast
-protein spaghetti,0.29,2,100,200,10,1,38,5,16,2,40,261,0,0,0,0,pasta
+eggo minis frozen waffle bites,1.89333,3,100,290,4,10,47,1,280,3.8,0,40,480,0,0,0,breakfast
+eggo minis pancake bites buttermilk,2.1657,3,100,270,6,8,44,1,70,3.6,0,50,560,0,0,0,breakfast
+eggo minis pancake bites chocolate,1.516,3,100,130,2,3,24,1,30,3.6,0,30,180,0,0,0,breakfast
+eggo waffles buttermilk,0.598,2,100,180,4,5,30,1,260,3.6,0,50,300,0,0,0,breakfast
+eggo waffles homestyle,0.598,2,100,180,4,4.5,31,1,260,3.6,0,30,230,0,0,0,breakfast
+eggo waffles blueberry,0.598,2,100,180,3,6,30,1,260,3.6,0,30,360,0,0,0,breakfast
+eggo waffles chocolate chip,0.598,2,100,200,3,7,32,1,260,3.6,0,50,320,0,0,0,breakfast
+ore-ida extra crispy fries,0.4766,3,100,160,2,7,22,1,0,0.5,0,400,430,0,0,0,side
+garlic texas toast,0.29875,2,100,130,2,7,13,1,10,0.9,0,40,190,0,0,0,side
+new york garlic bread sticks,0.5316,2,100,190,5,7,26,2,30,1.5,0,0,360,0,0,0,side
 goodles,1.2,2,100,270,15,4,48,6,140,3,0,280,600,2,9,2,pasta
 goodles cup,1.9475,1,100,210,10,3.5,37,5,90,2.1,0,220,570,1.2,0,1.5,pasta
 built puff,2.24,2,100,140,17,2.5,14,1,81,3,0,188,90,0,0,0,snack
@@ -146,8 +166,12 @@ snapdragon chicken pho,2.89,1,100,230,4,4,44,2,10,0,0,46,840,0,0,0,soup
 panera broccoli cheddar,5.99,1,100,440,17,27,32,3,430,0.9,0,630,1850,0,0,1.2,soup
 progresso minestrone,2.49,1,100,110,5,2,19,4,30,1.2,0,480,690,0,0,0,soup
 heyday tomato ricotta lasagna,4.49,1,100,180,6,9,21,4,,,,,,,,,frozen meal
-egg,0.14,3,100,70,6,5,0,0,28,0.9,6,69,71,0.6,0,1.1,snack
+egg,0.14,2,100,70,6,5,0,0,28,0.9,6,69,71,0.6,0,1.1,snack
 deli fresh rotiserrie chicken breast,0.81125,4,100,50,9,1,2,0,0,0,0,0,0,0,0,0,snack
 deli fresh oven roasted turkey,0.81125,4,100,60,9,1,3,0,0,1,0,0,530,0,0,0,snack
 multivitamin,0.0796,1,100,0,0,0,0,0,210,0,120,0,0,11,99,25,supplement
 magnesium glycinate,0.248,1,100,0,0,0,0,0,0,0,300,0,0,0,0,0,supplement
+banana,0.2,1,100,105,1,0,27,3,6,1,0,11,1,0,0,0,fruit
+granny smith apple,0.85,1,100,74,0.378,0.196,19.7,3.5,7,0.098,7.14,162,1,0.028,0,0,fruit
+vita coco,1.53916,2,100,60,0,0,15,0,53,0,24,646,50,0,0,0,shake
+david protein ice cream,2.66333,3,100,90,10,2,16,3,50,1,0,80,190,0,0,0,snack

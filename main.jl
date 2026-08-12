@@ -6,7 +6,6 @@ df = CSV.read("ingredients.csv", DataFrame; comment="#") # from target's website
 col(name) = coalesce.(df[!, name], 0.0)
 
 DAYS = 1
-WEEKLY_BUDGET = 130.0
 
 names = df.name
 cost = col(:cost)
@@ -30,8 +29,9 @@ N = nrow(df)
 M = maximum(max_units) * DAYS
 
 # target macros
-cost_range = (0, WEEKLY_BUDGET / 7) .* DAYS
-cal_range = (0, 2434) .* DAYS
+cost_range = (0, Inf) .* DAYS
+CAL_MARGIN = 0 # how much you wanna save for condiments and such
+cal_range = (1900 - CAL_MARGIN, 2434 - CAL_MARGIN) .* DAYS
 protein_range = (150, Inf) .* DAYS
 fat_range = (60, 109) .* DAYS
 carbs_range = (100, Inf) .* DAYS
@@ -53,7 +53,6 @@ model = Model(HiGHS.Optimizer)
 @constraint(model, [i = 1:N], x[i] <= max_units[i] * DAYS) # per-day cap * horizon
 @constraint(model, [i = 1:N], x[i] <= M * y[i])            # big-M linking, x > 0 means y = 1
 @constraint(model, [i = 1:N], x[i] >= y[i])                # y = 1 => x >= 1
-@constraint(model, sum(y) <= 6)                            # variety cap (might need to bump if no sols)
 
 CATEGORY_CAP = 1 # only allow this many overlapping categories. prevents the solver from suggesting 3 varieties of nugget
 category = coalesce.(df.category, "other")
@@ -95,7 +94,8 @@ end
 @constraint(model, vit_d_range[1] <= total_vit_d <= vit_d_range[2])
 
 # Objective function
-@objective(model, Min, total_cost + 0.091 * sum(x) + 0.9 * sum(y))
+VARIETY_COST = 10.0 # cost per unique ingredient. drives the optimizer to prefer smaller baskets and prevents it from suggesting 1 of a trillion different things
+@objective(model, Min, total_cost + VARIETY_COST * sum(y))
 
 # Solve and print results
 optimize!(model)
