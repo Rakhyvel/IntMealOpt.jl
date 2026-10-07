@@ -25,6 +25,9 @@ vit_c = col(:vit_c)
 vit_d = col(:vit_d)
 max_units = df.max
 
+MEALS = [:breakfast, :lunch, :dinner, :snack]
+eligible = reduce(hcat, col(m) for m in MEALS) # N x length(MEALS)
+
 N = nrow(df)
 M = maximum(max_units) * DAYS
 
@@ -36,14 +39,20 @@ protein_range = (150, Inf) .* DAYS
 fat_range = (60, 109) .* DAYS
 carbs_range = (100, Inf) .* DAYS
 fiber_range = (25, Inf) .* DAYS
-calcium_range = (1000, 2500) .* DAYS
+calcium_range = (1000, 2300) .* DAYS
 iron_range = (8, 45) .* DAYS
-magnesium_range = (400, Inf) .* DAYS
+magnesium_range = (310, Inf) .* DAYS
 potassium_range = (3400, Inf) .* DAYS
 sodium_range = (1500, 2300) .* DAYS
 zinc_range = (11, 40) .* DAYS
 vit_c_range = (90, 2000) .* DAYS
 vit_d_range = (15, 100) .* DAYS
+
+# how many distinct foods fill each mealtime slot
+breakfast_range = (0, 0) .* DAYS
+lunch_range = (1, Inf) .* DAYS
+dinner_range = (1, 1) .* DAYS
+snack_range = (0, Inf) .* DAYS
 
 # Model and decision variables
 model = Model(HiGHS.Optimizer)
@@ -61,6 +70,13 @@ for c in unique(category)
     @constraint(model, sum(y[i] for i in 1:N if category[i] == c) <= CATEGORY_CAP)
 end
 
+@variable(model, z[1:N, 1:length(MEALS)], Bin) # does food `i` fill mealtime slot `m`?
+slot(meal) = z[:, findfirst(==(meal), MEALS)]
+
+@constraint(model, [i = 1:N, m = 1:length(MEALS)], z[i, m] <= eligible[i, m]) # only where appropriate
+is_meal = [any(@view(eligible[i, :]) .> 0) for i in 1:N]
+@constraint(model, [i = 1:N; is_meal[i]], sum(z[i, :]) == y[i]) # a used food fills exactly one slot
+
 # Compute totals
 @expression(model, total_cost, sum(cost[i] * x[i] for i in 1:N))
 @expression(model, total_cal, sum((scale[i] / 100.0) * cal[i] * x[i] for i in 1:N))
@@ -76,6 +92,10 @@ end
 @expression(model, total_zinc, sum((scale[i] / 100.0) * zinc[i] * x[i] for i in 1:N))
 @expression(model, total_vit_c, sum((scale[i] / 100.0) * vit_c[i] * x[i] for i in 1:N))
 @expression(model, total_vit_d, sum((scale[i] / 100.0) * vit_d[i] * x[i] for i in 1:N))
+@expression(model, total_breakfast, sum(slot(:breakfast)))
+@expression(model, total_lunch, sum(slot(:lunch)))
+@expression(model, total_dinner, sum(slot(:dinner)))
+@expression(model, total_snack, sum(slot(:snack)))
 
 # Handle "closest to target" (absolute deviation)
 @constraint(model, cost_range[1] <= total_cost <= cost_range[2])
@@ -92,6 +112,10 @@ end
 @constraint(model, zinc_range[1] <= total_zinc <= zinc_range[2])
 @constraint(model, vit_c_range[1] <= total_vit_c <= vit_c_range[2])
 @constraint(model, vit_d_range[1] <= total_vit_d <= vit_d_range[2])
+@constraint(model, breakfast_range[1] <= total_breakfast <= breakfast_range[2])
+@constraint(model, lunch_range[1] <= total_lunch <= lunch_range[2])
+@constraint(model, dinner_range[1] <= total_dinner <= dinner_range[2])
+@constraint(model, snack_range[1] <= total_snack <= snack_range[2])
 
 # Objective function
 VARIETY_COST = 10.0 # cost per unique ingredient. drives the optimizer to prefer smaller baskets and prevents it from suggesting 1 of a trillion different things
@@ -106,10 +130,12 @@ if !is_solved_and_feasible(model)
 end
 
 println("Chosen ingredients:")
+slot_of(i) = findfirst(m -> value(z[i, m]) > 0.5, 1:length(MEALS))
 for i in 1:N
     units = Int(round(value(x[i]); digits=0))
     if units > 0
-        println(units, "x ", rpad(names[i], 25))
+        m = slot_of(i)
+        println(units, "x ", rpad(names[i], 25), " (", m === nothing ? "extra" : MEALS[m], ")")
     end
 end
 
